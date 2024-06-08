@@ -4,9 +4,10 @@ body {
 }
 .webcam-head {
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   background-color: #0e212c;
   height: 50px;
+  padding-top: 10px;
 }
 @keyframes neon {
     0%,
@@ -18,6 +19,7 @@ body {
     }
   }
 .header-text {
+    margin: 0;
   color: white;
   animation: neon 1.5s ease-in-out infinite alternate;
   text-align: center;
