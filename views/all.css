@@ -1,34 +1,41 @@
-
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff; }
-.icon{
-    font-family: "新細明體";
-    text-align: center;
+  margin: 0;
+  margin-top: 0;
 }
-.navbackground{
-    background-color: whitesmoke;
-    
+.webcam-head {
+  margin-top: 0;
+  margin-bottom: 2px;
+  background-color: #0e212c;
+  height: 50px;
 }
-.Identify-background{
-    width: 500px;
-    height: 60px;
-    text-align: center;
-    margin: auto;
-    border: 2px solid #212529 ;
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+    }
+    50% {
+      text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+    }
+  }
+.header-text {
+  color: white;
+  animation: neon 1.5s ease-in-out infinite alternate;
+  text-align: center;
 }
-.webcam{
-    
-    margin:10px auto;
-    width: 1800px;
-    height: 750px;
-    border: 2px solid black;
-    border-radius: 1%;
-
+.navbackground {
+  background-color: whitesmoke;
+}
+.Identify-background {
+  width: 500px;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #212529;
+}
+.webcam {
+  margin: 10px auto;
+  width: 1800px;
+  height: 750px;
+  border: 3px solid black;
+  border-radius: 1%;
 }
