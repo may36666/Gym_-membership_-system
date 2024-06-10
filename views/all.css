@@ -1,6 +1,7 @@
 body {
   margin: 0;
   margin-top: 0;
+  background-color:whitesmoke;
 }
 .webcam-head {
   margin-top: 0;
@@ -41,3 +42,4 @@ body {
   border: 3px solid black;
   border-radius: 1%;
 }
+
