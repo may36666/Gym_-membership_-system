@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
