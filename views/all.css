@@ -68,27 +68,29 @@ a:link {
 a:visited {
   color: black;
 }
-.header{
+.home-img{
+  padding-bottom:6px;
+}
+.header {
   height: 100px;
   display: block;
   clear: both;
   width: 100%;
   height: 100px;
-  
 }
 .nav-title {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   margin-left: 100px;
-  
 }
 .navbar {
-  background-color: whitesmoke;
+  background-color:gainsboro;
   padding: 30px;
   height: 100px;
   border-bottom: 1px black solid;
 }
+
 .home-frame {
   display: flex;
   align-items: center;
@@ -96,7 +98,7 @@ a:visited {
 .home-ul {
   display: flex;
   font-family: "Comic Sans MS";
-  padding-top:8px;
+  padding-top: 8px;
 }
 li {
   list-style: none;
@@ -107,17 +109,41 @@ li {
   padding-left: 20px;
   margin-left: 10px;
   display: inline;
-  font-family:'微軟正黑體' ;
+  font-family: "Chocolate Classical Sans", sans-serif;;
+  font-weight: 900;
 }
 
-.co{
+.co {
   display: block;
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
-.w-500{
+.train_set{
+  display: flex;
+  justify-content:center ;
+}
+.train_head_text{
+  font-weight: 600;
+  
+}
+.w-500 {
   height: 500px;
   width: 100%;
+}
+.train_grid{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
+.train{
+  display:flex;
+  flex-direction: column;
+}
+.train_1{
+  
+  width: 300px;
+  height:200px;
 }
 
 .goTop {
