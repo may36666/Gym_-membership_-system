@@ -50,8 +50,8 @@ ul ol {
 }
 .webcam {
   margin: 10px auto;
-  width: 1800px;
-  height: 750px;
+  width: 1900px;
+  height: 870px;
   border: 3px solid black;
   border-radius: 1%;
 }
@@ -113,11 +113,7 @@ li {
   font-weight: 900;
 }
 
-.co {
-  display: block;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-}
+/* 以上首頁表頭 */
 .train_set{
   display: flex;
   justify-content:center ;
@@ -168,6 +164,7 @@ li {
 h5.train_text1:hover{
   transform: scaleX(1.5);
 }
+/* 以上首頁內容 */
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -215,6 +212,8 @@ h5.train_text1:hover{
   background-color: #45a049;
 }
 /* 以上是留言板 */
+
+
 .goTop {
   position: fixed;
   right: 10px;

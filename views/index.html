@@ -19,7 +19,6 @@
 
 <body>
   <header class="header">
-
     <nav class="navbar">
       <div class="home-frame">
         <a class="nav-title" href="/views/index.html"><img src="/views/sport.jpg" alt="#" title="首頁圖" width="30"
@@ -30,7 +29,7 @@
             <li><a href="#" class="site-nav__ite">最新消息</a></li>
             <li><a href="#" class="site-nav__ite">會員中心</a></li>
             <li><a href="#" class="site-nav__ite">健身課程</a></li>
-            <li><a href="#" class="site-nav__ite">課程類型</a></li>
+            <li><a href="./about.html" class="site-nav__ite">健身諮詢</a></li>
         </div>
         </ul>
       </div>
@@ -85,7 +84,7 @@
   </div>
   <hr>
   <div class="container">
-    <h2>留言板</h2>
+    <h2>問題歡迎留言</h2>
     <ul class="message-list" id="messageList">
       <!-- 留言內容將顯示在這裡 -->
     </ul>
@@ -120,27 +119,27 @@
 
   </footer>
   <script>
-    document.getElementById('messageForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+    document.getElementById('messageForm').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-        const userName = document.getElementById('userName').value;
-        const userPhone = document.getElementById('userPhone').value;
-        const userMessage = document.getElementById('userMessage').value;
-        const messageList = document.getElementById('messageList');
-        const currentDateTime = new Date().toLocaleString();
+      const userName = document.getElementById('userName').value;
+      const userPhone = document.getElementById('userPhone').value;
+      const userMessage = document.getElementById('userMessage').value;
+      const messageList = document.getElementById('messageList');
+      const currentDateTime = new Date().toLocaleString();
 
-        const newMessage = document.createElement('li');
-        newMessage.innerHTML = `
+      const newMessage = document.createElement('li');
+      newMessage.innerHTML = `
             <strong>${userName}</strong> (${userPhone}): ${userMessage}
             <span class="timestamp">${currentDateTime}</span>
         `;
-        
-        messageList.appendChild(newMessage);
 
-        // 清空表單
-        document.getElementById('userName').value = '';
-        document.getElementById('userPhone').value = '';
-        document.getElementById('userMessage').value = '';
+      messageList.appendChild(newMessage);
+
+      // 清空表單
+      document.getElementById('userName').value = '';
+      document.getElementById('userPhone').value = '';
+      document.getElementById('userMessage').value = '';
     });
   </script>
 </body>
