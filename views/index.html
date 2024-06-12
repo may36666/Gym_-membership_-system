@@ -67,17 +67,82 @@
     <h2 class="train_head_text">健身訓練</h2>
   </div>
   <div class="train_grid">
-    <div class="train"><h3>機械式器材</h3><img src="../image/sport_5.jpg" alt="" class="train_1"></div>
-    <div class="train"><h3>自由重量</h3><img src="../image/sport_6.jpg" alt="" class="train_1"></div>
-    <div class="train"><h3>有氧運動</h3></div>
+    <div class="train">
+      <hr>
+      <h3 class="teain_text">機械式器材</h3><img src="../image/sport_5.jpg" alt="" class="train_1">
+      <h5 class="train_text1">使用不同的機械式器材來針對不同部位做訓練，機械式器材通常會有保護裝置，相對比較安全。</h5>
+    </div>
+    <div class="train">
+      <hr>
+      <h3 class="teain_text">自由重量</h3><img src="../image/sport_6.jpg" alt="" class="train_1">
+      <h5 class="train_text1">自由重量的訓練動作彈性幅度大、比較不受限，可以衍生出多種訓練動作，但要注意動作有沒有晃動、不標準，怕一直做錯動作，而導致受傷。</h5>
+    </div>
+    <div class="train">
+      <hr>
+      <h3 class="teain_text">有氧運動</h3><img src="../image/sport_7.jpg" alt="" class="train_1">
+      <h5 class="train_text1">就是當你的心率到達最大心跳率的50%­-90%時，可以認定為正在進行著有氧訓練，如散步、舞蹈、籃球等。</h5>
+    </div>
   </div>
+  <hr>
+  <div class="container">
+    <h2>留言板</h2>
+    <ul class="message-list" id="messageList">
+      <!-- 留言內容將顯示在這裡 -->
+    </ul>
+    <form class="message-form" id="messageForm">
+      <input type="text" id="userName" placeholder="你的名字" required>
+      <input type="tel" id="userPhone" placeholder="你的電話號碼" required>
+      <textarea id="userMessage" placeholder="你的留言" required></textarea>
+      <button type="submit">發送</button>
+    </form>
+  </div>
+
 
 
   <div class="goTop">
     <a href="#" class="goTopBtn jq-goTop">
-      <i class="fas fa-arrow-alt-circle-up fa-3x">TOP</i>
+      <i class="fas fa-arrow-alt-circle-up fa-3x">
+        <h4>TOP</h4>
+      </i>
     </a>
   </div>
+  <footer class="footer">
+
+    <div class="footmas">
+      <p>106台北市大安區復興南路一段390號2樓<br>02-6631-6588</p>
+    </div>
+    <div class="footmas">
+      <p><br><br></p>
+    </div>
+    <div class="footmas">
+      <p><br><br>© 2024 AIML05. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <script>
+    document.getElementById('messageForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const userName = document.getElementById('userName').value;
+        const userPhone = document.getElementById('userPhone').value;
+        const userMessage = document.getElementById('userMessage').value;
+        const messageList = document.getElementById('messageList');
+        const currentDateTime = new Date().toLocaleString();
+
+        const newMessage = document.createElement('li');
+        newMessage.innerHTML = `
+            <strong>${userName}</strong> (${userPhone}): ${userMessage}
+            <span class="timestamp">${currentDateTime}</span>
+        `;
+        
+        messageList.appendChild(newMessage);
+
+        // 清空表單
+        document.getElementById('userName').value = '';
+        document.getElementById('userPhone').value = '';
+        document.getElementById('userMessage').value = '';
+    });
+  </script>
 </body>
 
 </html>

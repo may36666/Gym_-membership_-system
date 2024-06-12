@@ -130,6 +130,17 @@ li {
   height: 500px;
   width: 100%;
 }
+@keyframes pinpon {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100px;
+  }
+  100%{
+    left: 200px;
+  }
+}
 .train_grid{
   display: flex;
   justify-content: space-around;
@@ -139,21 +150,96 @@ li {
 .train{
   display:flex;
   flex-direction: column;
+  width: 303px;
+  text-align: center;
+
 }
+.teain_text{
+  font-weight: 700;
+  border: #0e212c 2px solid;
+  border-radius:10px;
+  background-color: orange;
+}
+
 .train_1{
-  
   width: 300px;
   height:200px;
 }
+h5.train_text1:hover{
+  transform: scaleX(1.5);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.message-list {
+  list-style-type: none;
+  padding: 0;
+}
+.message-list li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.message-list li .timestamp {
+  display: block;
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 5px;
+}
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+.message-form input, .message-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.message-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message-form button:hover {
+  background-color: #45a049;
+}
+/* 以上是留言板 */
 .goTop {
   position: fixed;
   right: 10px;
   bottom: 10px;
+  border:3px solid orangered;
+  border-radius: 50%;
+  padding-top: 6px;
+  padding-right: 5px;
+  background-color: rgb(220, 96, 110);
 }
 .goTopBtn {
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+}
+/* 以上是TOP */
+.footer{
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color:gray;
+  
+}
+.footmas{
+  text-align: center;
 }
